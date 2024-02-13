@@ -16,7 +16,7 @@ const userRoute= require("./routes/userRoute");
 
 // connect to mongodb database
 mongoose.connect(process.env.URI)
-  .then(() => {
+.then(() => {
     console.log("Connected Successfully");
     app.listen(process.env.PORT || 8000, (err) => {
       if (err) console.log(err);
