@@ -14,7 +14,7 @@
 
 //   // for delete the card
 //   const handleDelete = async(id)=> {
-//     const response = await fetch(`http://localhost:5000/${id}`, {
+//     const response = await fetch(`https://crud-mernbackend.vercel.app/${id}`, {
 //       method: "DELETE",
 //     });
 
@@ -37,7 +37,7 @@
 
 //   // for read all data
 //   const getData = async()=> {
-//     const response = await fetch("http://localhost:5000");
+//     const response = await fetch("https://crud-mernbackend.vercel.app/");
 //     const result = await response.json();
 
 //     // console.log("result..", result);
