@@ -21,7 +21,7 @@
 //     //receving single user data
 //   const getSingleUserData = async () => {
 
-//       const response = await fetch(`https://crud-mernbackend.vercel.app/${id}`);
+//       const response = await fetch(`http://localhost:5000/${id}`);
 //       const result = await response.json();
 
 
@@ -49,7 +49,7 @@
 
 //     console.log(updatedUser);
 
-//     const response = await fetch(`https://crud-mernbackend.vercel.app/${id}`, {
+//     const response = await fetch(`http://localhost:5000/${id}`, {
 //       method: "PATCH",
 //       headers: {
 //         "Content-Type": "application/json",

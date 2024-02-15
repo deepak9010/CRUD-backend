@@ -22,7 +22,7 @@ const Create = () => {
          const addUser = {name,email,branch,age}
          console.log(addUser);
 
-         const response = await fetch("https://crud-mernbackend.vercel.app/",{
+         const response = await fetch("http://localhost:5000",{
             method: "POST",
             body : JSON.stringify(addUser),
             headers: {

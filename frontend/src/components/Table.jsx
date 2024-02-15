@@ -18,7 +18,7 @@ const Table = () => {
     const [error, setError] = useState();
     
     const getData = async()=> {
-        const response = await fetch("https://crud-mernbackend.vercel.app/");
+        const response = await fetch("http://localhost:5000");
         const result = await response.json();
     
         // console.log("result..", result);

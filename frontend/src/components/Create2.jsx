@@ -17,7 +17,7 @@ const Create2 = () => {
 
     console.log("beforepost", data);
 
-    const response = await fetch("https://crud-mernbackend.vercel.app/", {
+    const response = await fetch("http://localhost:5000", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
