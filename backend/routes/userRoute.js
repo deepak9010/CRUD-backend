@@ -7,7 +7,7 @@ const userdata = require("../models/userModel");
 
 
 // create
-router.post("/", async(req,res)=>{
+router.post("/create", async(req,res)=>{
     const {name, email,branch, age} = req.body;
     // const userdata = require("./models/userModel");
     try {
