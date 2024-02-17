@@ -20,7 +20,7 @@ const Update2 = () => {
      
     const getSingleUserData = async () => {
  
-      const response = await fetch(`https://crud-mernbackend-fj3w.onrender.com/${id}`);
+      const response = await fetch(`https://crud-mernapp.vercel.app/${id}`);
       const result = await response.json();
 
 
@@ -61,7 +61,7 @@ const Update2 = () => {
   const onSubmit = async (data) => {
     console.log("updated data", data);
 
-    const response = await fetch(`https://crud-mernbackend-fj3w.onrender.com/${id}`, {
+    const response = await fetch(`https://crud-mernapp.vercel.app/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
