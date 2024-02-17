@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
-app.use(express.json());
+
 
 const cors = require("cors");
 
@@ -15,7 +15,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
-
+app.use(express.json());
 // import userRoute file means import APIS file
 const userRoute= require("./routes/userRoute");
 
