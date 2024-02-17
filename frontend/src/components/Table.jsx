@@ -18,7 +18,7 @@ const Table = () => {
     const [error, setError] = useState();
     
     const getData = async()=> {
-        const response = await fetch("https://crud-mernbackend-fj3w.onrender.com/");
+        const response = await fetch("https://crud-mernapp.vercel.app/");
         const result = await response.json();
     
         // console.log("result..", result);
