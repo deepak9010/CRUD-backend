@@ -9,7 +9,7 @@ app.use(express.json());
 const cors = require("cors");
 
 const corsOptions = {
-    origin : "https://crud-mernapp-my77.vercel.app",
+    origin : "https://crud-mernapp-my77.vercel.app/",
     method : "GET , POST , PUT , PATCH , DELETE , HEAD",
     Credential : true
 }
