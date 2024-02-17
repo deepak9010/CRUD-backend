@@ -7,7 +7,14 @@ dotenv.config();
 app.use(express.json());
 
 const cors = require("cors");
-app.use(cors());
+
+const corsOptions = {
+    origin : "https://crud-mernapp-my77.vercel.app/",
+    method : "GET , POST , PUT , PATCH , DELETE , HEAD",
+    Credential : true
+}
+
+app.use(cors(corsOptions));
 
 // import userRoute file means import APIS file
 const userRoute= require("./routes/userRoute");
