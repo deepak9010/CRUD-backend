@@ -27,7 +27,7 @@ const Read2 = () => {
 
   // for delete the card
   const handleDelete = async(id)=> {
-    const response = await fetch(`https://crud-mernbackend-fj3w.onrender.com/${id}`, {
+    const response = await fetch(`https://crud-mernapp.vercel.app/${id}`, {
       method: "DELETE",
     });
 
@@ -50,7 +50,7 @@ const Read2 = () => {
 
   // for read all data
   const getData = async()=> {
-    const response = await fetch("https://crud-mernbackend-fj3w.onrender.com/");
+    const response = await fetch("https://crud-mernapp.vercel.app/");
     const result = await response.json();
 
     // console.log("result..", result);

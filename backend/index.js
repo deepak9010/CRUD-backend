@@ -1,14 +1,17 @@
+const cors = require("cors");
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
 
+app.use(cors({
+    origin : "https://crud-mernapp-my77.vercel.app",
+    methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
+    credentials: true,
+}));
+
 app.use(express.json());
-
-const cors = require("cors");
-app.use(cors());
-
 // import userRoute file means import APIS file
 const userRoute= require("./routes/userRoute");
 
@@ -28,5 +31,3 @@ mongoose.connect(process.env.URI)
   });
 
 app.use(userRoute);
-
-
