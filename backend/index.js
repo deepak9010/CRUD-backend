@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 app.use(cors({
-    origin : "https://crud-mernapp-my77.vercel.app",
+    origin : "https://crud-mernapp-my77.vercel.app/",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 }));
